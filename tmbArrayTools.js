@@ -26,3 +26,32 @@ function getDistinctArrayElements(A){
         return distinctElementArray;  
     } else return false;   
 }
+//////////////////////////////////////////////
+
+
+/**
+ * FUNCTION NAME: deepCloneArrayElements
+ * 
+ * AUTHOR: Mamadou Ben TRAORE
+ * 
+ * CREATION DATE: 09232021
+ * 
+ * LAST MODIFICATION DATE: 09232021
+ * 
+ * VERSION: 1.0.0 .
+ * 
+ * 
+ * DESCRIPTION: This function has an Array (A) as input and will return a copy of A, not a reference to A.
+ * deepCloneArrayElements will return false if the input parameter is not an array.
+ * 
+*/
+function deepCloneArrayElements(A){
+    if(Array.isArray(A)){
+        var distinctElementArray = [];
+        for(var i=0; i<A.length; i++){
+            distinctElementArray.push(A[i]);
+        }
+        return distinctElementArray;  
+    } else return false;   
+}
+//////////////////////////////////////////////
