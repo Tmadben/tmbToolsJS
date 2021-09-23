@@ -47,11 +47,11 @@ function getDistinctArrayElements(A){
 */
 function deepCloneArrayElements(A){
     if(Array.isArray(A)){
-        var distinctElementArray = [];
+        var deepCloneArray = [];
         for(var i=0; i<A.length; i++){
-            distinctElementArray.push(A[i]);
+            deepCloneArray.push(A[i]);
         }
-        return distinctElementArray;  
+        return deepCloneArray;  
     } else return false;   
 }
 //////////////////////////////////////////////
